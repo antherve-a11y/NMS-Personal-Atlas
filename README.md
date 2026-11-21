@@ -113,15 +113,15 @@ NMS Personal Atlas is a free, independent companion application for No Man's Sky
 
 ### Security verification
 
-**VirusTotal result: 0/40 detections**
+**VirusTotal result: 0/51 detections**
 
 Scanned on November 21, 2026.
 
-[View the public VirusTotal report](https://www.virustotal.com/gui/file/04ceec5eeeea5299055a8ca3b4956f26512cf738c6bffcafd93516f7441474f2/detection)
+[View the public VirusTotal report](https://www.virustotal.com/gui/file/3065c250089ebd5d98f865fa9784548217c563c6ebee193fa224a2b23b3a5927/detection)
 
 **SHA-256:**
 
-`04ceec5eeeea5299055a8ca3b4956f26512cf738c6bffcafd93516f7441474f2`
+`3065c250089ebd5d98f865fa9784548217c563c6ebee193fa224a2b23b3a5927`
 
 ### Standalone installation
 
