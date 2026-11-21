@@ -102,3 +102,38 @@ NMS Personal Atlas is an independent fan-made application.
 No Man's Sky is developed by Hello Games. This project is not affiliated with or endorsed by Hello Games.
 
 Third-party components retain their respective licences. Redistribution rights for included game-derived assets must be verified before public release.
+
+---
+
+## Latest release — V12.7.250
+
+**NMS Personal Atlas — Standalone Windows Edition**
+
+NMS Personal Atlas is a free, independent companion application for No Man's Sky.
+
+### Security verification
+
+**VirusTotal result: 0/40 detections**
+
+Scanned on November 21, 2026.
+
+[View the public VirusTotal report](https://www.virustotal.com/gui/file/04ceec5eeeea5299055a8ca3b4956f26512cf738c6bffcafd93516f7441474f2/detection)
+
+**SHA-256:**
+
+`04ceec5eeeea5299055a8ca3b4956f26512cf738c6bffcafd93516f7441474f2`
+
+### Standalone installation
+
+- Bundled Python runtime and dependencies.
+- No automatic dependency downloads at startup.
+- Local browser-based interface.
+- Windows 10/11 x64.
+- No separate Python installation required.
+- No administrator privileges normally required.
+
+Some optional technical diagnostics can read No Man's Sky process memory when explicitly requested. Optional online features and external links are documented separately.
+
+The application is designed to read original No Man's Sky save files without modifying them.
+
+**Transparency:** A clean VirusTotal scan is not a guarantee of complete software security. Additional runtime and privacy verification is ongoing.
