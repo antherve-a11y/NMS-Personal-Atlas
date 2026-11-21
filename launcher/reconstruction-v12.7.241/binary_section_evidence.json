@@ -1,0 +1,110 @@
+{
+  "a": {
+    "filename": "atlas_209_patched.exe",
+    "size_bytes": 5398016,
+    "sha256": "0b28c10b4b33ec455c5eec07f712a5b8d3c5940017ca79642d46208f6b5b8915"
+  },
+  "b": {
+    "filename": "NMS Personal Atlas.exe",
+    "size_bytes": 5600768,
+    "sha256": "6393663ef96910565d80ce8fc78190e1c2805b4cc16fa8e707ae6de663e76595"
+  },
+  "sections": {
+    ".data": {
+      "identical": true,
+      "a": {
+        "size_bytes": 218112,
+        "sha256": "bf4e26988cef31f89af7adec3c6fd7400ec6d87d05629e9aab28aff7c97b10b7"
+      },
+      "b": {
+        "size_bytes": 218112,
+        "sha256": "bf4e26988cef31f89af7adec3c6fd7400ec6d87d05629e9aab28aff7c97b10b7"
+      }
+    },
+    ".idata": {
+      "identical": true,
+      "a": {
+        "size_bytes": 1536,
+        "sha256": "1cae5218c64df5d83051e9e4468943ce18681a2d154d208f8742bc756768663a"
+      },
+      "b": {
+        "size_bytes": 1536,
+        "sha256": "1cae5218c64df5d83051e9e4468943ce18681a2d154d208f8742bc756768663a"
+      }
+    },
+    ".pdata": {
+      "identical": true,
+      "a": {
+        "size_bytes": 57344,
+        "sha256": "22613ca56d57fb0591e8c4bc7a52835fb99b3c7ebc6b943c7abdd7dbc65a4c6c"
+      },
+      "b": {
+        "size_bytes": 57344,
+        "sha256": "22613ca56d57fb0591e8c4bc7a52835fb99b3c7ebc6b943c7abdd7dbc65a4c6c"
+      }
+    },
+    ".rdata": {
+      "identical": true,
+      "a": {
+        "size_bytes": 2587136,
+        "sha256": "0540447f1dd593fb9753769ae322092f4c7dbc9642b27264df58c58988c340ab"
+      },
+      "b": {
+        "size_bytes": 2587136,
+        "sha256": "0540447f1dd593fb9753769ae322092f4c7dbc9642b27264df58c58988c340ab"
+      }
+    },
+    ".reloc": {
+      "identical": true,
+      "a": {
+        "size_bytes": 46592,
+        "sha256": "90393492a2f770d95f281af3d8e95c60704fabea41e66a31d760029ee0bef4f1"
+      },
+      "b": {
+        "size_bytes": 46592,
+        "sha256": "90393492a2f770d95f281af3d8e95c60704fabea41e66a31d760029ee0bef4f1"
+      }
+    },
+    ".rsrc": {
+      "identical": false,
+      "a": null,
+      "b": {
+        "size_bytes": 202752,
+        "sha256": "01bdf03d3e48055a01ad2e43c9d8aa5db79213a776d02e240e443a8c6eab4cab"
+      }
+    },
+    ".symtab": {
+      "identical": true,
+      "a": {
+        "size_bytes": 512,
+        "sha256": "3e67f4a7d14b832ff2a2433e9cf0f6f5720821f67148a87c0ee2595a20c96c68"
+      },
+      "b": {
+        "size_bytes": 512,
+        "sha256": "3e67f4a7d14b832ff2a2433e9cf0f6f5720821f67148a87c0ee2595a20c96c68"
+      }
+    },
+    ".text": {
+      "identical": true,
+      "a": {
+        "size_bytes": 2484736,
+        "sha256": "19897a7e10926136f5a0ece449f81ec6a6ea9d7197cfcbe377eee6993617007e"
+      },
+      "b": {
+        "size_bytes": 2484736,
+        "sha256": "19897a7e10926136f5a0ece449f81ec6a6ea9d7197cfcbe377eee6993617007e"
+      }
+    },
+    ".xdata": {
+      "identical": true,
+      "a": {
+        "size_bytes": 512,
+        "sha256": "ca79d69f6e9db810d43f004e0e52e06af8a7c26a0c78a710b7456629dabb2fa1"
+      },
+      "b": {
+        "size_bytes": 512,
+        "sha256": "ca79d69f6e9db810d43f004e0e52e06af8a7c26a0c78a710b7456629dabb2fa1"
+      }
+    }
+  }
+}

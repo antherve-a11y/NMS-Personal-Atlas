@@ -1,0 +1,38 @@
+{
+  "main.wndProc": {
+    "address": "0x65c2a0",
+    "size_bytes": 4416,
+    "different_bytes": 0,
+    "identical": true
+  },
+  "main.pollServerInBackground": {
+    "address": "0x65d3e0",
+    "size_bytes": 96,
+    "different_bytes": 34,
+    "identical": false
+  },
+  "main.updateFromLog": {
+    "address": "0x65d580",
+    "size_bytes": 1920,
+    "different_bytes": 3,
+    "identical": false
+  },
+  "main.launchAtlas": {
+    "address": "0x65dd60",
+    "size_bytes": 3552,
+    "different_bytes": 3,
+    "identical": false
+  },
+  "main.main": {
+    "address": "0x65eb40",
+    "size_bytes": 1984,
+    "different_bytes": 1,
+    "identical": false
+  },
+  "main.parseStatusLine": {
+    "address": "0x65f300",
+    "size_bytes": 1472,
+    "different_bytes": 1,
+    "identical": false
+  }
+}
