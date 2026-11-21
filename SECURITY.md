@@ -58,13 +58,13 @@ Network behavior and privacy verification remain under review.
 
 **Version:** V12.7.250  
 **Scan date:** November 21, 2026  
-**VirusTotal result:** 0/40 detections
+**VirusTotal result:** 0/51 detections
 
-[View the VirusTotal report](https://www.virustotal.com/gui/file/04ceec5eeeea5299055a8ca3b4956f26512cf738c6bffcafd93516f7441474f2/detection)
+[View the VirusTotal report](https://www.virustotal.com/gui/file/3065c250089ebd5d98f865fa9784548217c563c6ebee193fa224a2b23b3a5927/detection)
 
 **Archive SHA-256:**
 
-`04ceec5eeeea5299055a8ca3b4956f26512cf738c6bffcafd93516f7441474f2`
+`3065c250089ebd5d98f865fa9784548217c563c6ebee193fa224a2b23b3a5927`
 
 This result applies specifically to the V12.7.250 archive. It does not constitute a security certification or guarantee that future versions will receive the same result.
 
