@@ -25,3 +25,51 @@ Please do not disable antivirus protection to run Atlas. If security software qu
 For a suspected security issue, include the exact filename, SHA-256, detection name, version, Windows version, and reproduction steps. Do not publish private game saves or other users' data in a public issue.
 
 Contact: personnalatlas@gmail.com
+
+---
+
+## Security information — V12.7.250
+
+### Local operation
+
+NMS Personal Atlas is designed to run locally on Windows 10/11 x64.
+
+- Python and its required libraries are bundled with the distribution.
+- No automatic dependency installation is required at startup.
+- The application serves its interface locally at `127.0.0.1:8532`.
+- Administrator privileges are not normally required.
+- Original No Man's Sky save files are intended to remain read-only.
+
+### Memory access
+
+Certain optional technical diagnostic tools can read the No Man's Sky process memory when explicitly requested.
+
+The regular Alliance Observatory no longer requires process memory inspection. Alliance names can be manually recorded and associated with their native identifiers.
+
+### Network access
+
+The application is designed for offline operation.
+
+Some optional functions may contact external services when explicitly requested, such as repairing save-file key mappings. External links may also open in the user's browser.
+
+Network behavior and privacy verification remain under review.
+
+### Antivirus verification
+
+**Version:** V12.7.250  
+**Scan date:** November 21, 2026  
+**VirusTotal result:** 0/40 detections
+
+[View the VirusTotal report](https://www.virustotal.com/gui/file/04ceec5eeeea5299055a8ca3b4956f26512cf738c6bffcafd93516f7441474f2/detection)
+
+**Archive SHA-256:**
+
+`04ceec5eeeea5299055a8ca3b4956f26512cf738c6bffcafd93516f7441474f2`
+
+This result applies specifically to the V12.7.250 archive. It does not constitute a security certification or guarantee that future versions will receive the same result.
+
+### Reporting security issues
+
+Security concerns and potential vulnerabilities are taken seriously.
+
+Please avoid publicly disclosing sensitive exploit details or personal save data. Contact the project maintainer through an appropriate private channel before publishing technical vulnerability details.
