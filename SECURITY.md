@@ -70,6 +70,112 @@ This result applies specifically to the V12.7.250 archive. It does not constitut
 
 ### Reporting security issues
 
+
+**NMS Personal Atlas — V12.7.255**  
+Last updated: **November 22, 2026**
+
+NMS Personal Atlas is a free, independent Windows companion application for No Man's Sky. This document explains the security posture of the distributed application, what is and is not verified, and how to report a concern responsibly.
+
+## Supported releases
+
+| Version | Security and compatibility attention |
+| --- | --- |
+| **V12.7.255** | Current release for new bug and vulnerability reports. |
+| V12.7.254 and earlier | Historical versions. Update to the current release where practical; fixes may not be backported. |
+
+Security updates are best-effort for this independent community project. No formal response-time or support-service guarantee is offered.
+
+## Antivirus report — exact release file
+
+The **author-repacked V12.7.255 ZIP archive** was submitted to VirusTotal on **November 22, 2026**. It showed **0 / 53 detections** among participating antivirus engines at the time of the scan.
+
+- [VirusTotal detection report](https://www.virustotal.com/gui/file/c87435acb6f2ff7c7a235f700aeec7ebac72c66d5c5f21ab8d9b8591914b883f/detection)
+- **Reported filename:** `NMS_Personal_Atlas_V12.7.255.zip`
+- **Reported SHA-256:**
+
+```text
+c87435acb6f2ff7c7a235f700aeec7ebac72c66d5c5f21ab8d9b8591914b883f
+```
+
+This hash refers **only to the ZIP that was scanned**. Repacking, modifying or rebuilding a ZIP results in a different hash. The exact GitHub/Nexus Mods download must match before this scan is cited as evidence for that download.
+
+**A 0/53 result is not a guarantee of safety, a malware-free certification or an endorsement by the scanning vendors.** Heuristic antivirus and SmartScreen warnings may still occur, particularly for independent/unsigned software.
+
+### Verify a download on Windows
+
+Open PowerShell in the folder containing the downloaded ZIP:
+
+```powershell
+Get-FileHash -Algorithm SHA256 ".\NMS_Personal_Atlas_V12.7.255.zip"
+```
+
+Compare the full output with the SHA-256 above. If it differs, do **not** assume the VirusTotal report applies. Recheck the download source and release notes.
+
+Do **not** disable Microsoft Defender, Avast, SmartScreen or other protections to run Atlas. Report a quarantine or detection to the developer, including the filename, SHA-256 and vendor's detection name.
+
+## What the application does
+
+**Local execution**
+
+- The standard Windows distribution includes an embedded Python 3.13 runtime and required third-party packages. Ordinary startup does not install Python globally or fetch Python dependencies.
+- The `LANCER_ATLAS.cmd` launcher starts a local Streamlit application on **`127.0.0.1:8532`** and opens a browser page on the user's PC.
+- Streamlit usage-statistics collection is disabled in the distributed configuration. This does **not** prove the absence of all possible network traffic by browsers, Windows or third-party components.
+
+**File and save access**
+
+- Atlas is designed to **read supported original NMS saves without rewriting them**.
+- Atlas stores its own database, history, caches and diagnostic outputs in **`NMSFaunaAnalyzerData`** and, for selected technical workflows, other explicitly named local directories.
+- The V12.7.255 save-key decoder uses a bundled NMS JSON mapping if the local map is missing or incomplete. It does not need an automatic online mapping download during ordinary startup and does not silently overwrite an existing custom map.
+- The optional **Repair JSON keys (Internet)** operation explicitly requests a resource from GitHub when the user chooses it.
+- Export actions and selected external links can open local save dialogs or web pages following user action.
+
+**Memory and diagnostic capabilities**
+
+- Ordinary Atlas exploration is save-driven. The Alliance Observatory no longer uses automatic NMS process-memory inspection.
+- **Some optional, legacy Equipment technical diagnostics still contain Windows APIs for read-only inspection of `NMS.exe` process memory** (including `OpenProcess`, `VirtualQueryEx` and `ReadProcessMemory`) when invoked by the user. Such behavior can trigger security heuristics.
+- The presence of read-only memory APIs does not establish that every invocation succeeds or that every executable behavior has been independently verified. Do not describe Atlas categorically as incapable of accessing process memory.
+
+## Optional verification tools
+
+The standalone distribution includes tools that users can run locally:
+
+- **`ATLAS_Save_Diagnostic.cmd`** — reports detected save files and the health of local/bundled/effective JSON mappings; profile identities are anonymized in its intended output.
+- **`VERIFIER_INTEGRITE_ATLAS.cmd`** — checks distributed files against the supplied integrity manifest.
+- **`AUDIT_SAVES_AVANT.cmd` / `AUDIT_SAVES_APRES.cmd`** — compare save-file hashes before and after a user-run test. They do not attribute a change to a particular process.
+- **`AUDIT_RESEAU_WINDOWS.cmd`** — observes selected Atlas Python TCP connections for a limited period. It is **not** a complete audit of browser traffic, DNS, UDP or very short-lived connections.
+
+These tools produce **local reports**, not security certifications. Logs can still contain user paths, local network details or other sensitive metadata. Review and redact before sharing.
+
+## Known limits and claims we do not make
+
+- A static source inspection is **not** a comprehensive Windows behavior audit of every bundled DLL and third-party component.
+- A clean VirusTotal report does **not** prove that a program is harmless or that every antivirus product will accept it.
+- The public source and review packages are **not necessarily complete, byte-for-byte reproducible builds** of the distributed Windows ZIP. The exact scope must be checked for each version.
+- Save compatibility, calculation accuracy and protection from every possible file-write or network defect have not been universally certified across all Windows and NMS configurations.
+- Some game-derived data, the bundled JSON-key map and some visual assets require further **provenance and redistribution-rights review**. Publication does not automatically grant downstream reuse rights.
+
+See the release's bundled `AUDIT_SECURITE_LIRE_EN_PREMIER.md`, `THIRD_PARTY_NOTICES.txt`, provenance reports and licence documents for further context.
+
+## Reporting a vulnerability privately
+
+**Security contact: `personnalatlas@gmail.com`**
+
+Please use email for suspected vulnerabilities or privacy issues rather than posting exploits, player saves or sensitive logs in a public GitHub issue. Include, where possible:
+
+1. Atlas version and the exact release ZIP filename and SHA-256.
+2. Windows version and relevant NMS storefront (Steam, GOG or Game Pass).
+3. Clear reproduction steps, expected/observed behavior and any security impact.
+4. Sanitized log excerpts or screenshots; avoid sharing credentials, personal paths, game saves or unrelated personal information unless a secure transfer has been agreed.
+5. Antivirus product, detection name and report link, if relevant.
+
+Do not run destructive tests against other users or share private data without authorization. The developer can investigate and publish a fix or advisory where warranted; there is no guaranteed response time.
+
+For ordinary feature requests and non-sensitive bugs, use the project's public issue/discussion channels instead.
+
+---
+
+NMS Personal Atlas is an independent, community-developed companion application and is **not affiliated with, supported by or endorsed by Hello Games**.
+
 Security concerns and potential vulnerabilities are taken seriously.
 
 Please avoid publicly disclosing sensitive exploit details or personal save data. Contact the project maintainer through an appropriate private channel before publishing technical vulnerability details.
