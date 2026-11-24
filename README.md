@@ -1,3 +1,100 @@
+# ðŸš€ NMS Personal Atlas
+
+### Explore â€¢ Scan â€¢ Identify
+
+**Your personal universe, organized.**
+
+NMS Personal Atlas is a **free, independent Windows companion application for No Man's Sky**. It turns supported local game-save data into a personal exploration atlas with discovery tracking, mapping, fleet and equipment analysis, infrastructure information and galactic trading tools.
+
+Atlas is **read-only with respect to your original game saves by design**. It maintains its own local database and history; some advanced statistics and visualizations are reconstructed or estimated rather than directly reported by the game.
+
+## ðŸŒŒ Main features
+
+- **Exploration & discoveries:** Galaxies, systems, planets, biomes, resources, fauna, flora and minerals.
+- **Galactic mapping:** Interactive maps of visited systems, stations, bases and exploration routes.
+- **Planetary analysis:** Detailed discovery records and illustrative 3D planetary visualizations.
+- **Discovery history:** Retained exploration information even when records are absent from the latest save.
+- **Companions & genetics:** Creature profiles, traits and egg-sequencing tools.
+- **Fleet & starships:** Ships, frigates, squadrons, corvettes, upgrades and configuration comparisons.
+- **Equipment optimization:** Multi-tools, weapons, exosuits and exocraft, including technology-layout comparisons.
+- **Bases & infrastructure:** Extractors, silos, resource production and storage networks.
+- **Galactic commerce:** Market information, supported price calculations, comparisons and route planning.
+- **Space exploration & alliances:** Space discovery information and galactic alliance records.
+- **Explorer progress:** Personal statistics, discovery completion and exploration milestones.
+- **Languages:** **English ðŸ‡¬ðŸ‡§ Â· FranÃ§ais ðŸ‡«ðŸ‡· Â· Deutsch ðŸ‡©ðŸ‡ª**.
+
+> **Interpretation:** Atlas distinguishes data read from the save from reconstructed, calculated, estimated and illustrative results. Predicted prices, reconstructed equipment statistics and stylized planet models should not automatically be treated as exact in-game values.
+
+## âœ¨ Latest release â€” V12.7.257 (November 24, 2026)
+
+**German localization, a dedicated Language_Resolver, community improvements and reliability updates.**
+
+### What's new in V12.7.257
+
+- **German language added:** A third interface language alongside French and English, with expanded translations across menus, panels and contextual interface text.
+- **Language_Resolver:** A centralized, maintainable localization system with per-language catalogs, synchronization and fallback behavior to support future updates.
+- **Visual updates:** New panoramic header artwork for **Space Exploration** and **Alliances**.
+- **Community acknowledgements:** Enhanced credits, special dedications and a structured contributor registry.
+- **Save compatibility:** Continued improvements to bundled NMS JSON key mapping discovery, fallback and diagnostic reporting, including work prompted by player reports.
+- **PlanetResolver & processing:** Improvements to long-running save analysis, diagnostic visibility, caching and incomplete-data handling.
+- **Packaging:** Cleaner player-facing distribution while retaining the self-contained Windows runtime and necessary resources.
+
+**Thanks to Nyrdin and the community** for detailed feedback and diagnostic reports.
+
+[View releases and download Atlas](https://github.com/antherve-a11y/NMS-Personal-Atlas/releases) Â· [Security and antivirus information](SECURITY.md)
+
+## ðŸ’» Installation â€” Windows 10/11 (64-bit)
+
+1. Download the **complete** `NMS_Personal_Atlas_V12.7.257.zip` archive from GitHub Releases.
+2. Extract **all** files into a writable folder outside the No Man's Sky game directory (for example, `D:\Games\NMS Personal Atlas`).
+3. Open the extracted Atlas folder and double-click **`LANCER_ATLAS.cmd`**.
+4. Keep the launcher window open while using Atlas. Your default browser should open automatically at **http://127.0.0.1:8532**.
+5. Select or verify your NMS profile and save slot. Use **Reload Save** after saving new in-game progress.
+
+The release includes its own Windows Python runtime and required dependencies. **You do not need to install Python separately or run `pip` during ordinary startup.** No mod manager or administrator privileges are normally required.
+
+**Updating:** Before replacing an existing version, back up the **`NMSFaunaAnalyzerData`** folder. It contains local Atlas data, configuration and retained discovery history. Preserve it when moving between installations.
+
+## ðŸ›¡ï¸ Security and download verification
+
+**V12.7.257 archive analyzed on VirusTotal (November 24, 2026): 0/47 detections in the supplied report screenshot.** The number of participating engines or results may change on subsequent analyses.
+
+- **Analyzed filename:** `NMS_Personal_Atlas_V12.7.257.zip`
+- **SHA-256:** `b830aab0da0a442431dfe15da1f2fc0a61f5384e5240878550f1a941d48bf180`
+- **VirusTotal:** [View the V12.7.257 archive report](https://www.virustotal.com/gui/file/b830aab0da0a442431dfe15da1f2fc0a61f5384e5240878550f1a941d48bf180/detection)
+- **Checksums:** [SHA256SUMS.txt](SHA256SUMS.txt)
+
+Verify the **downloaded ZIP**, not a differently named or repacked archive:
+
+```powershell
+Get-FileHash -Algorithm SHA256 ".\NMS_Personal_Atlas_V12.7.257.zip"
+```
+
+The result must exactly match the SHA-256 above. **0 detections is not a guarantee of safety** or a substitute for normal antivirus protections. Atlas is distributed without a digital code-signing certificate, so some Windows or antivirus warnings may still occur. Do not disable your protections to run it. See [SECURITY.md](SECURITY.md) for limitations and responsible vulnerability reporting.
+
+## ðŸ”¬ Technology and project status
+
+Atlas uses Python, Streamlit, SQLite, NumPy/pandas, save-file analysis and reverse-engineering research into supported game mechanics. Some advanced reconstruction features remain experimental.
+
+The project is under active development, guided by its creator's research, testing and development decisions with substantial AI assistance. Published technical materials or source snapshots do not necessarily reproduce the exact distributed Windows archive byte-for-byte.
+
+## ðŸ“– Documentation
+
+The repository includes illustrated user guides in [English](NMS_Personal_Atlas_Complete_Illustrated_User_Guide_EN_2026.pdf) and [French](NMS_Personal_Atlas_Guide_Utilisateur_Illustre_Complet_FR_2026.pdf), plus technical architecture overviews.
+
+## ðŸ¤ Feedback
+
+Bug reports, diagnostic reports, suggestions and constructive feedback are welcome.
+
+**Contact:** personnalatlas@gmail.com
+
+Please do not post personal save files, private paths or other sensitive information publicly. Security-related concerns should be reported privately as described in [SECURITY.md](SECURITY.md).
+
+## Disclaimer
+
+NMS Personal Atlas is an independent fan-made application. **No Man's Sky is developed by Hello Games; this project is not affiliated with, supported by or endorsed by Hello Games.** Third-party components retain their respective licenses. Some game-derived resources may require additional provenance and redistribution-rights review.
+
+
 # 🚀 NMS Personal Atlas
 
 ### Explore • Scan • Identify
