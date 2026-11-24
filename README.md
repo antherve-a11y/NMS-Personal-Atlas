@@ -1,4 +1,4 @@
-# ðŸš€ NMS Personal Atlas
+# NMS Personal Atlas
 
 ### Explore â€¢ Scan â€¢ Identify
 
@@ -8,7 +8,7 @@ NMS Personal Atlas is a **free, independent Windows companion application for No
 
 Atlas is **read-only with respect to your original game saves by design**. It maintains its own local database and history; some advanced statistics and visualizations are reconstructed or estimated rather than directly reported by the game.
 
-## ðŸŒŒ Main features
+## Main features
 
 - **Exploration & discoveries:** Galaxies, systems, planets, biomes, resources, fauna, flora and minerals.
 - **Galactic mapping:** Interactive maps of visited systems, stations, bases and exploration routes.
