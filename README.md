@@ -21,11 +21,11 @@ Atlas is **read-only with respect to your original game saves by design**. It ma
 - **Galactic commerce:** Market information, supported price calculations, comparisons and route planning.
 - **Space exploration & alliances:** Space discovery information and galactic alliance records.
 - **Explorer progress:** Personal statistics, discovery completion and exploration milestones.
-- **Languages:** **English ðŸ‡¬ðŸ‡§ Â· FranÃ§ais ðŸ‡«ðŸ‡· Â· Deutsch ðŸ‡©ðŸ‡ª**.
+- **Languages:** **English · Français · Deutsch **.
 
 > **Interpretation:** Atlas distinguishes data read from the save from reconstructed, calculated, estimated and illustrative results. Predicted prices, reconstructed equipment statistics and stylized planet models should not automatically be treated as exact in-game values.
 
-## âœ¨ Latest release â€” V12.7.257 (November 24, 2026)
+## Latest release V12.7.257 (November 24, 2026)
 
 **German localization, a dedicated Language_Resolver, community improvements and reliability updates.**
 
@@ -55,7 +55,7 @@ The release includes its own Windows Python runtime and required dependencies. *
 
 **Updating:** Before replacing an existing version, back up the **`NMSFaunaAnalyzerData`** folder. It contains local Atlas data, configuration and retained discovery history. Preserve it when moving between installations.
 
-## ðŸ›¡ï¸ Security and download verification
+##  Security and download verification
 
 **V12.7.257 archive analyzed on VirusTotal (November 24, 2026): 0/47 detections in the supplied report screenshot.** The number of participating engines or results may change on subsequent analyses.
 
@@ -72,17 +72,17 @@ Get-FileHash -Algorithm SHA256 ".\NMS_Personal_Atlas_V12.7.257.zip"
 
 The result must exactly match the SHA-256 above. **0 detections is not a guarantee of safety** or a substitute for normal antivirus protections. Atlas is distributed without a digital code-signing certificate, so some Windows or antivirus warnings may still occur. Do not disable your protections to run it. See [SECURITY.md](SECURITY.md) for limitations and responsible vulnerability reporting.
 
-## ðŸ”¬ Technology and project status
+## Technology and project status
 
 Atlas uses Python, Streamlit, SQLite, NumPy/pandas, save-file analysis and reverse-engineering research into supported game mechanics. Some advanced reconstruction features remain experimental.
 
 The project is under active development, guided by its creator's research, testing and development decisions with substantial AI assistance. Published technical materials or source snapshots do not necessarily reproduce the exact distributed Windows archive byte-for-byte.
 
-## ðŸ“– Documentation
+## Documentation
 
 The repository includes illustrated user guides in [English](NMS_Personal_Atlas_Complete_Illustrated_User_Guide_EN_2026.pdf) and [French](NMS_Personal_Atlas_Guide_Utilisateur_Illustre_Complet_FR_2026.pdf), plus technical architecture overviews.
 
-## ðŸ¤ Feedback
+## Feedback
 
 Bug reports, diagnostic reports, suggestions and constructive feedback are welcome.
 
